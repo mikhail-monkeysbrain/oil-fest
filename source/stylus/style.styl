@@ -1,0 +1,467 @@
+@import "../fonts/ptsans.css"
+@import "variables"
+@import "helpers"
+
+body
+	font-family 'PT Sans'
+	font-size 18px
+	color black
+	
+h1
+	font-size 60px
+	color white
+	text-align center
+	font-weight 600
+	text-shadow: 0px 4px 18px rgba(119, 47, 0, 0.55)
+	text-transform uppercase
+	padding 110px 0 85px
+	line-height 1.2
+	.extra
+		font-size 89px
+		position relative
+		margin 0 1em
+		+media(900px)
+			font-size 60px
+			margin 0
+		&::after
+			content ''
+			display block
+			position absolute
+			size (103px 33px)
+			background url('../img/icons/arrow-text.png')
+			top .5em
+			right -1.4em
+			+media(900px)
+				display none
+		&::before
+			content ''
+			display block
+			position absolute
+			size (103px 33px)
+			background url('../img/icons/arrow-text.png')
+			top .5em
+			left -1.4em
+			transform rotate(180deg)
+			+media(900px)
+				display none
+			
+h2
+	font-size 22px
+	color black
+	text-transform uppercase
+	font-weight 400
+	text-align center
+
+a
+	color lightgray
+	text-decoration none
+	transition animation
+	border-bottom 1px solid transparent
+	&:hover
+		border-bottom 1px solid lightgray
+	&.logo
+		&:hover
+			border-bottom 1px solid transparent
+
+p
+	text-align center
+	letter-spacing: -0.03em
+	color black
+
+section
+	padding 1em 0
+	margin 0
+
+button
+	color white
+	border-radius 10px
+	background lightgreen
+	font-weight 600
+	text-align center
+	size (182px 39px)
+	transition animation
+	cursor pointer
+	&:hover
+		background darkgreen
+	&:focus
+		outline none	
+
+#btn_submit
+	color white
+	background lightgreen
+	font-weight 600
+	text-align center
+	transition animation
+	cursor pointer
+	border-radius 5px
+	size (290px 39px)
+	margin 0.5em calc(50% - 145px)
+	font-size 20px
+	line-height 1.8
+	&:hover
+		background darkgreen
+	
+.messages
+	text-align: center
+	font-weight: 600
+	font-size: 18px
+	text-transform: uppercase
+
+form
+	background: #fff
+	width: 425px
+	padding: 2em
+	position: relative
+	left: calc(50% - 213px)
+	top: calc(50% - 135px)
+	min-height: 271px
+		
+input
+	box-shadow 0 0 5px 0px lightgray 
+	border-radius 5px
+	size (290px 29px)
+	margin .5em calc(50% - 145px)
+	text-align center
+	&:hover
+		box-shadow 0 0 10px 0px lightgray 
+	&:focus
+		outline none
+		box-shadow 0 0 15px 0px lightgray 
+
+#overlay
+	position fixed
+	width 100%
+	height 100%
+	background rgba(0,0,0, .7)
+	z-index 101
+	display none
+
+.close
+	size (32px 32px)
+	background url('../img/icons/cancel.svg')
+	cursor pointer
+	transition .7s linear
+	position absolute
+	top 1em
+	right 1em
+	&:hover
+		transform rotate(360deg)
+	+media(440px)
+		top 0
+		left calc(50% - 16px)
+
+.content
+	max-width 1168px
+	width 100%
+	margin 0 auto
+	display flex
+	justify-content space-between
+	align-items center
+	+media(1200px)
+		width 90%
+	+media(768px)
+		justify-content center
+	
+.copy
+	text-align left
+	font-size 14px
+	+media(960px)
+		display none
+	
+.header
+	background url('../img/header.jpg') no-repeat top center
+	background-size cover
+	&-top
+		background white
+		width 100%
+		box-shadow 0 0 15px -5px black
+		&-name
+			z-index 1
+			+media(768px)
+				display none
+			p
+				font-size 20px
+				font-weight bold
+				text-transform uppercase
+		&-call
+			display flex
+			justify-content space-between
+			align-items center
+			z-index 1
+			p
+				color darkgreen
+				font-weight 600
+				text-align center
+				margin 0 20px
+				+media(768px)
+					display none
+				.small
+					font-size 14px
+					font-weight 400
+		.content
+			height 100px
+	&-nav
+		background rgba(250,250,250, .7)
+		font-size 14px
+		text-transform uppercase
+		color lightgray
+		+media(480px)
+			display none
+		ul
+			@extend .content
+			height 44px
+			text-align center
+		&-item
+			flex 1
+		&-logo
+			size (287px 201px)
+			background url('../img/logo.png')
+			background-size cover
+			position relative
+			top -20px		
+			+media(960px)
+				size (200px 139px)
+			+media(768px)
+				size (120px 83px)
+				top -10px
+	
+.about
+	&-date
+		display flex
+		align-items center
+		justify-content center
+		text-align center
+		margin 20px 0
+		span
+			font-size 20px
+			font-weight 600
+			margin 0 15px
+		&-item
+			size (137px 137px)
+			border-radius 50%
+			color white
+			font-size 60px
+			font-weight 600 
+			line-height 18px
+			padding-top 25px   
+			.month
+				font-size 18px
+			&.lightgreen
+				background lightgreen
+			&.darkgreen
+				background darkgreen
+	p
+		width 100%
+		max-width 1168px
+		margin 0 auto 
+		+media(1200px)
+			width 90%
+
+.accordion
+	margin 1em 0 
+	text-align center
+	&-hide
+		height 0 !important
+	&-header
+		margin-top 1em
+		display flex
+		justify-content center
+		align-items center
+		a
+			font-weight 600
+			color lightgreen
+			text-transform uppercase
+			line-height 2
+			&:hover
+				border-bottom 1px solid transparent
+		&-info
+			padding 2em
+			width 55%
+			margin 70px
+			background rgba(255,255,255, .8) 
+			position relative
+			outline outline
+			outline-offset -1em
+			+media(640px)
+				width 75% 
+			&-circle
+				overflow hidden
+				display inline-block
+				position absolute
+				height 68%
+				width 7%
+				&::before
+					content ""
+					position absolute
+					top 0
+					bottom 0
+					width 160px
+					border-radius 100%
+					background rgba(255,255,255, .8)
+				&.left
+					top: 15.5%
+					left: -7%
+					&::before
+						left:0
+				&.right
+					top: 15.5%
+					right: -7%
+					&::before
+						right:0
+	&-body
+		@extend .content
+		align-items center
+		+media(800px)
+			margin-bottom 2em
+		+media(640px)
+			flex-direction column
+		div
+			padding 1em
+			flex 1
+			+media(640px)
+				width 100%
+	.border
+		border border	
+	.meat
+		background url('../img/meat.jpg') no-repeat center
+		width 100%
+	.fish
+		background url('../img/fish.jpg') no-repeat center
+		width 100%
+	.cake
+		background url('../img/cake.jpg') no-repeat center
+		width 100%
+	.oil
+		background url('../img/oil.jpg') no-repeat center
+		width 100%
+	.date
+		font-size 30px
+		font-weight 600
+		color lightgreen
+	.event
+		font-size 24px
+		font-weight 600
+		color darkgreen
+		line-height 2 		
+		
+.events
+	+media(640px)
+		display none
+	.content
+		flex-wrap wrap
+	&-inner
+		width 100%
+		padding 55px
+		margin 2em 0
+		background url('../img/events.jpg') no-repeat center 
+	&-item
+		width 28%
+		background rgba(255,255,255, .8)
+		margin 1em
+		padding 1em
+		display flex
+		flex-direction column
+		justify-content center
+		align-items center
+		+media(860px)
+			margin .3em 
+		&-name
+			text-transform uppercase
+			font-size 18px
+			color darkgreen
+			font-weight 600
+		&-img
+			border-radius 50%
+			margin 1em
+			border 4px solid white 
+			width 70%
+			
+.partners, .photo
+	max-width 1168px
+	width 100%
+	margin 0 auto
+	+media(1200px)
+		width 90%
+	.owl
+		margin 1em 0
+	.item
+		display flex
+		justify-content center
+		align-items center 
+
+.photo
+	img
+		width 95%
+	a
+		&:hover
+			border-bottom 1px solid transparent 
+			
+.media
+	.owl
+		width 100%
+		max-width 1168px
+		margin 0 auto
+		+media(1200px)
+			width 90%
+	&-inner
+		width 100%
+		padding 55px
+		margin 2em 0
+		background url('../img/media.jpg') no-repeat center
+	&-item
+		@extend .events-item
+		width 93%
+		display block
+		&-header
+			text-align left
+			color darkgreen
+			font-weight 600
+			text-transform uppercase
+		&-description
+			text-align justify
+		a
+			float right
+			position relative
+			margin-right 1.5em
+			&:hover
+				.arrow
+					right -2em
+			.arrow
+				width 1.2em 
+				position absolute
+				right -1.5em
+				top 0
+				transition animation 
+				
+.contacts
+	position relative
+	&-map
+		@extend .accordion-header-info
+		position absolute
+		right 0
+		top 4em
+		right 2em
+		z-index 1
+		width 100%
+		max-width 420px
+		+media(640px)
+			display none
+		
+.footer
+	@extend .content
+	&-call
+		@extend .header-top-call
+		p
+			color lightgray
+		button
+			color lightgray
+			background transparent
+			size (182px 39px)
+			border 2px solid lightgray
+			display flex
+			justify-content center
+			&:hover
+				background lightgray
+				color white
+	+media(760px)
+		display none

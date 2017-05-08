@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.7, maximum-scale=0.7, user-scalable=no">
+	<title>Масляный пир</title>
+	<link href="css/reset.css" rel="stylesheet" >
+	<link href="css/jquery.fancybox.css" rel="stylesheet" >
+	<link href="css/owl.carousel.css" rel="stylesheet">
+	<link href="css/owl.theme.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet" >
+</head>
+<body>
+
+	<div id="overlay">
+		<form>
+			<p class="form-header font-bold ttu">Оставьте свои контактные данные <br>и наши менеджеры свяжутся <br>с Вами в ближайшее время! </p>
+			<div class="messages"></div>
+			<br>
+			<div class="close"></div>
+			<input type="text" id="user_name" placeholder="Имя" required>
+			<input type="phone" id="user_phone" placeholder="Телефон" required>
+			<div id="btn_submit" class="hideinput">Заказать звонок</div>
+		</form>
+	</div>
+
+	<header id="header" class="header">
+		<div class="header-top">
+			<div class="content">
+				<div class="header-top-name">
+					<p class="font-lightgreen">Гастрономический фестиваль</p>
+					<p class="font-darkgreen">северорусской кухни в Вологде</p>
+				</div>
+				<div class="header-top-call">
+					<p>8-800-250-35-63
+						<br>
+						<span class="small">Звонок бесплатный! </span>
+					</p>
+					<button class="btn">Заказать билет</button>
+				</div>
+			</div>
+		</div>
+		<div id="menu" class="header-nav">
+			<ul>
+				<li class="header-nav-item">
+					<a href="#about">О фестивале</a>
+				</li>
+				<li class="header-nav-item">
+					<a href="#programm">Программа мероприятия</a>
+				</li>
+				<a class="logo" href="#header"><li class="header-nav-logo"></li></a>
+				<li class="header-nav-item">
+					<a href="#partners">Партнеры фестиваля</a>
+				</li>
+				<li class="header-nav-item">
+					<a href="#contacts">Контакты</a>
+				</li>
+			</ul>
+		</div>
+			<h1>С нами<br><span class="extra">как по маслу!</span></h1>
+	</header>
+
+	<section id="about" class="about">
+		<h2>о фестивале</h2>
+		<div class="about-date">
+			<div class="about-date-item darkgreen">
+				<div class="about-date-item">23<br><span class="month">февраля</span></div>
+			</div>
+			<span>&ndash;</span>
+			<div class="about-date-item lightgreen">
+				<div class="about-date-item">26<br><span class="month">февраля</span></div>
+			</div>
+		</div>
+		<p>23-26 февраля в Вологде впервые пройдет гастрономический фестиваль «Масляный пир». Повара заведений обещают традиционную русскую кухню, а также всевозможные блюда с использованием масла. Уникальность нового туристического проекта заключается в том, что пока все остальные города России угощают блинами с маслом, в Вологде будут угощать маслом с блинами. В период с 20 по 26 февраля в городе будут также организованы дегустации масла, мастер-классы по изготовлению блинов, праздничные мероприятия в ресторанах и на различных городских площадках. На Кремлевской площади и в Кремлевском саду будет работать широкая ярмарка.</p>
+	</section>
+
+	<section id="programm" class="programm">
+		<h2>программа мероприятия</h2>
+		<div id="accordion" class="accordion">
+			<div class="accordion-hide"></div>
+			<div class="accordion-hide"></div>
+
+			<div class="accordion-header meat">
+				<div class="accordion-header-info">
+					<div class="accordion-header-info-circle left"></div>
+					<p class="date">23 февраля</p>
+					<p class="event">Мясной пир</p>
+					<p class="description">Рестораторы разработали специальное меню для грандиозных <br> пиров – рыбного и мясного. </p>
+					<a href="#">Подробнее</a>
+					<div class="accordion-header-info-circle right"></div>
+				</div>				
+			</div> 
+			<div class="accordion-body">
+			  <div class="col">
+					<p class="font-darkgreen font-bold ttu">Кремлевская площадь</p>
+					<br>
+					<p>12.00 – 15.00 <br> Концертная программа с участием коллективов г. Вологды. (силовое шоу, спортивные cостязания, кулачные бои с участием Череповецкой Бузы и клуба «Исток»).</p>
+					<br>
+					<p>с 11.00 до 15.00 <br> дегустационное шоу</p>
+					<br>
+					<p>
+						с 11.00 до 15.00 <br> мастер – классы по приготовлению русских напитков
+					</p>
+					<br>
+			    <p>
+						с 10.00 до 16.00 <br>ярмарка сувенирных изделий
+				  </p>
+                    <br>
+                    <p class="font-darkgreen font-bold ttu">Центр народных художественных промыслов и ремесел "Резной Палисад"</p>
+					<br>
+				  <p>11.00 – 17.00 <br>
+			      Мастер-классы по народным промыслам: традиционная народная кукла, роспись по дереву, берестоплетение, керамика (лепка из глины).</p>
+                     <br>
+                    <p class="font-darkgreen font-bold ttu">Вологодская слобода</p>
+					<br>
+			    <p>11.00 – 18.00 <br>
+			      Праздничная программа &quot;В гости к &quot;Петрушке&quot; на чай с блинами&quot;, уличные забавы в стиле народных традиций, мастер-класс по изготовлению чучела (кукла-масленица).</p>
+				</div>
+				<div class="col">
+					<p class="font-darkgreen font-bold ttu">Аллея парка</p>
+					<br>
+					<p>12.00 – 15.00 <br>Военно-историческая реконструкция «Год 1917».</p>
+					<br>
+					<p class="font-darkgreen font-bold ttu">Парк &quot;Кремлевский сад&quot;</p>
+					<br>
+					<p>13.00 – 14.00 <br> Спектакль «Масленица». Театр-студия «Сонет».</p>
+                    <p>14.00 – 17.00 <br>
+                     Детские, семейные, интерактивные программы у масленичного костра</p>
+                    <p>15.00 – 17.00 <br> 
+                  Квест-игра по станциям для молодежи в аллее парка &quot;Кремлевский сад&quot;.</p>
+					<br>
+					<div class="border">
+					<p class="font-darkgreen font-bold ttu">Мясные пиры в ресторанах города Вологды</p>
+					<br>
+					<p>с 19:00 <br>(ресторан «На Глинках» (ул.Чехова, 12), <br>ресторан «ПП» (ул.Советский пр-т, 80),<br>ресторан «Бардак Бар» (ул.Козленская, 15),<br> ресторан «Атриум» (ул.Герцена, 27),<br>Ресторан «7 Вечеров» (ул. Проспект Победы, 13)</p>
+					<br>						
+					</div>
+				</div>
+				<div class="pdf">
+					<div class="pdf">
+						<a class="gallerypdf" data-fancybox-type="iframe" href="pdf/meat1.pdf">
+						<img src="pdf/meat1.jpg"></a>
+						<a class="gallerypdf" data-fancybox-type="iframe" href="pdf/meat2.pdf">
+						<img src="pdf/meat2.jpg"></a>
+						<a class="gallerypdf" data-fancybox-type="iframe" href="pdf/meat3.pdf">
+						<img src="pdf/meat3.jpg"></a>
+						<a class="gallerypdf" data-fancybox-type="iframe" href="pdf/meat4.pdf">
+						<img src="pdf/meat4.jpg"></a>
+						<a class="gallerypdf" data-fancybox-type="iframe" href="pdf/meat5.pdf">
+						<img src="pdf/meat5.jpg"></a>
+					</div>
+				</div>
+			</div>
+			<div class="accordion-header fish">
+				<div class="accordion-header-info">
+					<div class="accordion-header-info-circle left"></div>
+					<p class="date">24 февраля</p>
+					<p class="event">Рыбный  пир</p>
+					<p class="description">Рестораторы разработали специальное меню для грандиозных <br> пиров – рыбного и мясного. </p>
+					<a href="#">Подробнее</a>
+					<div class="accordion-header-info-circle right"></div>
+				</div>				
+			</div> 
+			<div class="accordion-body">
+			  <div class="col">
+					<p class="font-darkgreen font-bold ttu">Кремлевская площадь</p>
+					<br>
+					<p>11.00 – 16.00 <br> 
+					Балаганные театрализованные, шоу &quot;Частушечные бои&quot;, фестиваль масленичных песен и закличек.</p>
+					<br>
+					<p>18.00 <br> 
+					  Файер-шоу. Театр каскадеров &quot;ЯрФильма&quot;.</p>
+					<br>
+					<p>
+						с 10.00 до 17.00 <br> 
+						ярмарка &quot;ВОЛОГОДСКОЕ КАЧЕСТВО&quot;, дегустация блинов</p>
+					<br>
+					<p>
+						с 10.00 до 16.00 <br>ярмарка сувенирных изделий
+					</p>
+					<br>
+					<p>
+						с 10.00 до 16.00 <br>
+					мастер-классы по изготовлению масленичных кукол</p>
+                    <br>
+				  <p>
+					  с 11.00 до 16.00 <br>
+				  чемпионат по приготовлению блинов</p>
+                  <br>
+					<p class="font-darkgreen font-bold ttu">Центр народных художественных промыслов и ремесел &quot;Резной Палисад&quot;</p>
+					<br>
+					<p>11.00 - 17.00<br> 
+					Мастер-классы по народным промыслам: традиционная народная кукла, роспись по дереву, берестоплетение, керамика (лепка из глины).<br>
+				  </p>
+				</div>
+				<div class="col">
+					<p class="font-darkgreen font-bold ttu">Парк &quot;Кремлевский сад&quot;</p>
+					<br>
+					<p>13.00 – 14.00 <br>
+				  Спектакль &quot;Масленичные шуточки&quot;. Культурно-досуговый центр &quot;Забота&quot;.</p>
+                  <br>
+					<p>14.00 – 17.00 <br>
+				  Детские, семейные, интерактивные программы у масленичного костра</p>
+                  <br>
+					<p>15.00 – 17.00 <br>
+				  Квест-игра по станциям для молодежи в аллее парка &quot;Кремлевский сад&quot;.</p>
+					<br>
+					<p class="font-darkgreen font-bold ttu">Музыкальный колледж (Горького, 105)</p>
+					<br>
+					<p>13.00<br> 
+					Музыкальный спектакль &quot;Как князь ремеслу обучился или Сказка о ремеслах&quot; (по билетам). Оркестр народных инструментов &quot;Перезвоны&quot;.					<br>
+				  </p>
+                  <br>
+                  <p class="font-darkgreen font-bold ttu">Вологодская слобода</p>
+					<br>
+					<p>12.00 – 14.00 <br>
+				  Праздничное гуляние с играми и забавами, песнями и частушками. В финале праздника - сжигание чучела.</p>
+                  <br>
+					<p>11.00 – 18.00 <br>
+				  Праздничная программа &quot;В гости к &quot;Петрушке&quot; на чай с блинами&quot;, уличные забавы в стиле народных традиций, мастер-класс по изготовлению чучела (кукла-масленица).</p>
+					<div class="border">
+					<p class="font-darkgreen font-bold ttu">Рыбные пиры в ресторанах города Вологды</p>
+					<br>
+					<br>
+					<p>с 19:00 <br>(ресторан «На Глинках» (ул.Чехова, 12), <br>ресторан «ПП» (ул.Советский пр-т, 80),<br>ресторан «Бардак Бар» (ул.Козленская, 15),<br> ресторан «Атриум» (ул.Герцена, 27)</p>
+					<br>						
+				  </div>
+				</div>
+				<div class="pdf">
+					<div class="pdf">
+						<a class="gallerypdf" data-fancybox-type="iframe" href="pdf/fish1.pdf">
+						<img src="pdf/fish1.jpg"></a>
+						<a class="gallerypdf" data-fancybox-type="iframe" href="pdf/fish2.pdf">
+						<img src="pdf/fish2.jpg"></a>
+						<a class="gallerypdf" data-fancybox-type="iframe" href="pdf/fish3.pdf">
+						<img src="pdf/fish3.jpg"></a>
+						<a class="gallerypdf" data-fancybox-type="iframe" href="pdf/fish4.pdf">
+						<img src="pdf/fish4.jpg"></a>
+					</div>
+				</div>
+			</div>
+			<div class="accordion-header cake">
+				<div class="accordion-header-info">
+					<div class="accordion-header-info-circle left"></div>
+					<p class="date">25 февраля</p>
+					<p class="event">Пироговый пир</p>
+					<p class="description">Рестораторы разработали специальное меню для грандиозных <br>
+			         пиров. </p>
+					<a href="#">Подробнее</a>
+					<div class="accordion-header-info-circle right"></div>
+				</div>				
+			</div> 
+			<div class="accordion-body">
+			  <div class="col">
+					<p class="font-darkgreen font-bold ttu">Кремлевская площадь</p>
+					<br>
+					<p>12.00 – 15.00 <br> 
+					Интерактивные программы. Творческие коллективы ГДК.</p>
+					<br>
+					<p>с 10.00 до 17.00 <br> 
+					ярмарка &quot;ВОЛОГОДСКОЕ КАЧЕСТВО&quot;, дегустация блинов.</p>
+					<br>
+					<p>
+						с 10.00 до 16.00 <br>
+						ярмарка сувенирных изделий</p>
+					<br>
+					<p>
+						с 11.00 до 16.00 <br>
+				  дегустационное шоу</p>
+                  <br>
+                  <p class="font-darkgreen font-bold ttu">Центр народных художественных промыслов и ремесел &quot;Резной Палисад&quot;</p>
+					<br>
+				  <p>11.00 – 17.00 <br>
+			    Мастер-классы по народным промыслам: традиционная народная кукла, роспись по дереву, берестоплетение, керамика (лепка из глины).</p>
+					<br>
+                  <p class="font-darkgreen font-bold ttu">Вологодская слобода</p>
+					<br>
+				  <p>11.00 – 18.00 <br>
+			    Праздничная программа &quot;В гости к &quot;Петрушке&quot; на чай с блинами&quot;, уличные забавы в стиле народных традиций, мастер-класс по изготовлению чучела (кукла-масленица).</p>
+                <br>
+                  <p class="font-darkgreen font-bold ttu">Архитектурно-этнографический музей &quot;Семенково&quot;</p>
+					<br>
+				  <p>12.00 – 15.00 <br>
+			    &quot;Широкая масленица&quot;. Праздничные театрализованные представления. Детские, семейные, интерактивные программы.</p>
+                <br>
+                  <p class="font-darkgreen font-bold ttu">Парк Ветеранов труда</p>
+					<br>
+				  <p>12.00 – 16.00 <br>
+			    Праздничные театрализованные представления, масленичные игры и аттракционы.</p>		
+				</div>
+				<div class="col">
+					<p class="font-darkgreen font-bold ttu">Парк &quot;Кремлевский сад&quot;</p>
+					<br>
+					<p>13.00 – 14.00 <br>
+				  Спектакль &quot;Ишь ты, Масленница!&quot;. Детский драматический театр (г. Санкт-Петербург)</p>
+                  <br>
+					<p>14.00 – 17.00 <br>
+				  Детские, семейные, интерактивные программы у масленичного костра</p>
+                  <br>
+					<p>15.00 – 17.00 <br>
+				  Квест-игра по станциям для молодежи в аллее парка &quot;Кремлевский сад&quot;.</p>
+					<br>
+                    <p class="font-darkgreen font-bold ttu">Стадион "Локомотив"</p>
+					<br>
+					<p>14.00 – 17.00 <br>
+					&quot;Спортивный праздник&quot;. Массовое катание. Ледовое представление. Звезды на собачьих упряжках. Мотокросс. Спортивные забеги, игра в футбол, перетягивание 100м. каната.</p>
+					<br>
+					<p class="font-darkgreen font-bold ttu">Музыкальный колледж (Горького, 105)</p>
+					<br>
+					<p>18.00<br> 
+					Концерт заслуженной артистки России &quot;Варвары&quot; (по билетам).</p>
+					<br>
+					<div class="border">
+					<p class="font-darkgreen font-bold ttu">Пироговые пиры в ресторанах города Вологды</p>
+					<br>
+					<p>с 19:00  <br>ресторан «ПП» (ул.Советский пр-т, 80)</p>
+					<br>						
+					</div>
+				</div>
+				<div class="pdf">
+					<a class="gallerypdf" data-fancybox-type="iframe" href="pdf/cake.pdf">
+						<img src="pdf/cake.jpg"></a>
+				</div>
+			</div>
+			<div class="accordion-header oil">
+				<div class="accordion-header-info">
+					<div class="accordion-header-info-circle left"></div>
+					<p class="date">26 февраля</p>
+					<p class="event">Семейный пир</p>
+					<p class="description">Рестораторы разработали специальное меню для грандиозных <br>
+			         пиров. </p>
+					<a href="#">Подробнее</a>
+					<div class="accordion-header-info-circle right"></div>
+				</div>				
+			</div> 
+			<div class="accordion-body">
+			  <div class="col">
+					<p class="font-darkgreen font-bold ttu">Кремлевская площадь</p>
+					<br>
+					<p>12.00 – 15.00 <br> 
+			      &quot;Вологодская Масленица&quot;, торжественное открытие праздника, награждение победителей конкурса &quot;Снежная Крепость&quot;, &quot;Цветущий, зимний город&quot;. Праздничные гуляния на главной сцене с Ансамблем &quot;Гостья&quot; (г.Череповец) и творческими коллективами города Вологды.</p>
+					<br>
+					<p>с 10.00 до 17.00 <br>
+	              ярмарка &quot;ВОЛОГОДСКОЕ КАЧЕСТВО&quot;, дегустация блинов</p>
+					<br>
+					<p>
+						с 10.00 до 16.00 <br>
+			          ярмарка сувенирных изделий</p>
+					<br>
+					<p>
+						с 10.00 до 16.00 <br>
+					  мастер-классы по изготовлению масленичных кукол</p>
+					<br>
+				  <p>
+					  с 11.00 до 16.00 <br>
+					  чемпионаты по приготовлению блинов и дегустационное шоу</p>
+                      <br>
+					<p class="font-darkgreen font-bold ttu">Берег реки Вологды</p>
+					<br>
+					<p>13.00 – 13.30 <br>
+		            Спектакль &quot;Блин, да Масленица!!!&quot;. Оркестр народных инструментов &quot;Перезвоны&quot;.</p>
+                     <br>
+					<p>14.00<br>
+			         Символическое сожжение чучела &quot;Масленицы&quot;</p>
+                      <br>
+                  <p class="font-darkgreen font-bold ttu">Центр народных художественных промыслов и ремесел &quot;Резной Палисад&quot;</p>
+					<br>
+				  <p>11.00 – 17.00 <br>
+			    Мастер-классы по народным промыслам: традиционная народная кукла, роспись по дереву, берестоплетение, керамика (лепка из глины).</p>
+                 <br>
+                  <p class="font-darkgreen font-bold ttu">Парк дома культуры &quot;Льнокомбинат&quot;</p>
+					<br>
+				  <p>12.00 – 14.00 <br>
+			    Праздничные театрализованные предстваления.</p>
+                 <br>
+					<p class="font-darkgreen font-bold ttu">Вологодская слобода</p>
+					<br>
+					<p>11.00 – 18.00 <br> 
+				    Праздничная программа &quot;В гости к &quot;Петрушке&quot; на чай с блинами&quot;, уличные забавы в стиле народных традиций, мастер-класс по изготовлению чучела (кукла-масленица).</p>
+				</div>
+				<div class="col">
+					<p class="font-darkgreen font-bold ttu">Парк &quot;Кремлевский сад&quot;</p>
+					<br>
+					<p>12.00 – 13.00 <br>
+				    Игровая программа &quot;Масленица-кривошейка&quot;. Школа традиционной народной культуры.</p>
+                    <br>
+					<p>13.00 – 14.00 <br>
+				    Бои на мечах и топорах. Клуб исторического костюма &quot;Исток&quot;, высечение огня старославянским способом, призовой столб.</p>
+                    <br>
+					<p>14.00 – 17.00 <br>
+				    Детские, семейные, интерактивные программы у масленичного костра</p>
+                    <br>
+					<p>15.00 – 17.00 <br>
+				    Квест-игра по станциям для молодежи в аллее парка &quot;Кремлевский сад&quot;.</p>
+					<br>
+					<p class="font-darkgreen font-bold ttu">Архитектурно-этнографический музей &quot;Семенково&quot;</p>
+					<br>
+					<p>12.00 – 15.00 <br> 
+				    &quot;Широкая масленица&quot;. Праздничные театрализованные представления. Детские, семейные, интерактивные программы.</p>
+                    <br>
+					<p class="font-darkgreen font-bold ttu">Парк Ветеранов труда</p>
+					<br>
+					<p>12.00 – 16.00 <br> 
+				    Праздничные театрализованные представления, масленичные игры и аттракционы.</p>
+					<br>
+					<div class="border">
+					<p class="font-darkgreen font-bold ttu">Семейные пиры в ресторанах города Вологды</p>
+					<br>
+					<p>с 19:00 <br>ресторан «ПП» (ул.Советский пр-т, 80),<br>ресторан «Бардак Бар» (ул.Козленская, 15)</p>
+					<br>						
+					</div>
+				</div>
+				<div class="pdf">
+					<a class="gallerypdf" data-fancybox-type="iframe" href="pdf/fam1.pdf">
+						<img src="pdf/fam1.jpg"></a>
+					<a class="gallerypdf" data-fancybox-type="iframe" href="pdf/fam2.pdf">
+						<img src="pdf/fam2.jpg"></a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="events">
+		<h2>праздничные мероприятия на различных городских площадках </h2>
+		<div class="events-inner">
+			<div class="content">
+				<div class="events-item">
+					<p class="events-item-name"> ярмарка <br> «Вологодское качество»</p>
+					<img class="events-item-img" src="img/event1.jpg" alt="">
+				</div>
+				<div class="events-item">
+					<p class="events-item-name"> концерты и <br> народные гуляния</p>
+					<img class="events-item-img" src="img/event2.jpg" alt="">
+				</div>
+				<div class="events-item">
+					<p class="events-item-name"> массовые спортивные<br> 
+					мероприятия</p>
+					<img class="events-item-img" src="img/event3.jpg" alt="">
+				</div>
+				<div class="events-item">
+					<p class="events-item-name"> дегустационное<br> 
+					шоу</p>
+					<img class="events-item-img" src="img/event4.jpg" alt="">
+				</div>
+				<div class="events-item">
+					<p class="events-item-name"> мастер-классы</p>
+					<img class="events-item-img" src="img/event5.jpg" alt="">
+				</div>
+				<div class="events-item">
+					<p class="events-item-name"> поздние завтраки<br> 
+					в ресторанах города</p>
+					<img class="events-item-img" src="img/event6.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="partners" class="partners">
+		<h2>Наши партнеры</h2>
+		<div class="owl owl-carousel_fivefold">
+			<div class="item">
+				<img src="img/partner1.jpg" alt="">
+			</div>
+			<div class="item">
+				<img src="img/partner2.jpg" alt="">
+			</div>
+			<div class="item">
+				<img src="img/partner3.jpg" alt="">
+			</div>
+			<div class="item">
+				<img src="img/partner4.jpg" alt="">
+			</div>
+			<div class="item">
+				<img src="img/partner5.jpg" alt="">
+			</div>
+		</div>
+	</section>
+
+	<section class="photo">
+		<h2>фотографии с прошлых мероприятий</h2>
+		<div class="owl owl-carousel_triple">
+			<div class="item">
+				<a class="fancybox" rel="group" href="img/photo1-b.jpg"><img src="img/photo1.jpg" alt="" /></a>
+			</div>
+			<div class="item">
+				<a class="fancybox" rel="group" href="img/photo2-b.jpg"><img src="img/photo2.jpg" alt="" /></a>
+			</div>
+			<div class="item">
+				<a class="fancybox" rel="group" href="img/photo3-b.jpg"><img src="img/photo3.jpg" alt="" /></a>
+			</div>
+		</div>
+	</section>
+
+	<section class="media">
+		<h2>сми о нас</h2>
+		<div class="media-inner">
+			<div class="owl owl-carousel_triple">
+				<div class="media-item">
+					<p class="media-item-header">20.02.2017 <br><br>Первый пир Масленичной недели прошел сегодня в Вологде</p>
+					<br>
+					<p class="media-item-description">В такой необычной форме состоялась пресс-конференция Мэра Вологды Андрея Травникова. Старт масленичным гуляньям дали в кофейне-ресторане «На Глинках», куда пригласили вологодских журналистов на «мясной пир».</p>
+					<br>
+					<a href="http://vologda-portal.ru/novosti/index.php?ID=359315&SECTION_ID=151">Подробнее
+						<img class="arrow" src="img/icons/right-arrow.svg" alt="">
+					</a>
+					<div class="clear"></div>
+				</div>
+				<div class="media-item">
+					<p class="media-item-header">20.02.2017 <br><br> Чучело Масленицы начали устанавливать в Вологде</p>
+					<br>
+					<p class="media-item-description">12-метровая кукла расположится на излучине реки в створе улицы Ленинградской. Это традиционное место для сжигания чучела Масленицы.</p>
+					<br>
+					<a href="http://vologda-portal.ru/novosti/index.php?ID=359307&SECTION_ID=151">Подробнее
+						<img class="arrow" src="img/icons/right-arrow.svg" alt="">
+					</a>
+					<div class="clear"></div>
+				</div>
+				<div class="media-item">
+					<p class="media-item-header">16.02.2017 <br><br> Вологодские бухтины расскажут и покажут на Масленице</p>
+					<br>
+					<p class="media-item-description">Интересную фольклорную программу готовят для юных вологжан творческие коллективы города. Они покажут театрализованные зарисовки по сюжетам местных сказок, баек, легенд и знаменитых вологодских бухтин.</p>
+					<br>
+					<a href="http://vologda-portal.ru/novosti/index.php?ID=359153&SECTION_ID=158">Подробнее
+						<img class="arrow" src="img/icons/right-arrow.svg" alt="">
+					</a>
+					<div class="clear"></div>
+				</div>
+				<div class="media-item">
+					<p class="media-item-header">15.02.2017 <br><br> Для гостей «Масляного пира» в Вологде испекут полутораметровый блин</p>
+					<br>
+					<p class="media-item-description">Блин-солнышко изготовит шеф-повар ресторана «Белладжио» Антонио Рицци. Для теста потребуется три килограмма муки, пять литров молока, 15 яиц.</p>
+					<br>
+					<a href="http://vologda-portal.ru/novosti/index.php?ID=359127&SECTION_ID=150">Подробнее
+						<img class="arrow" src="img/icons/right-arrow.svg" alt="">
+					</a>
+					<div class="clear"></div>
+				</div>
+				<div class="media-item">
+					<p class="media-item-header">15.02.2017 <br><br> Масленичное представление готовит театр кукол «Теремок»</p>
+					<br>
+					<p class="media-item-description">Веселый музыкальный спектакль-скоморошину «Сказка о попе и о работнике его Балде» представят артисты «Теремка» 25 февраля. </p>
+					<br>
+					<a href="http://vologda-portal.ru/novosti/index.php?ID=359118&SECTION_ID=164">Подробнее
+						<img class="arrow" src="img/icons/right-arrow.svg" alt="">
+					</a>
+					<div class="clear"></div>
+				</div>
+				<div class="media-item">
+					<p class="media-item-header">14.02.2017 <br><br> Уникальная гастрономическая программа ждет гостей вологодского «Масляного пира»</p>
+					<br>
+					<p class="media-item-description">Ключевыми событиями нового проекта в сфере туризма станут четыре гастрономических пира: 23 февраля – мясной, 24 февраля – рыбный, 25 февраля – пироговый или сладкий, 26 февраля – масляный.</p>
+					<br>
+					<a href="http://vologda-portal.ru/novosti/index.php?ID=359051&SECTION_ID=150">Подробнее
+						<img class="arrow" src="img/icons/right-arrow.svg" alt="">
+					</a>
+					<div class="clear"></div>
+				</div>
+				<div class="media-item">
+					<p class="media-item-header">13.02.2017 <br><br> На Масленицу вологжане посоревнуются в любимом виде спорта Ивана Поддубного</p>
+					<br>
+					<p class="media-item-description">Соревнования по борьбе на поясах пройдут на Кремлевской площади 23 февраля, в первый день масленичных гуляний. Их проведут представители артели кулачных бойцов «Буза» из Череповца.</p>
+					<br>
+					<a href="http://vologda-portal.ru/novosti/index.php?ID=359016&SECTION_ID=151">Подробнее
+						<img class="arrow" src="img/icons/right-arrow.svg" alt="">
+					</a>
+					<div class="clear"></div>
+				</div>
+				<div class="media-item">
+					<p class="media-item-header">13.02.2017 <br><br> Вологда вошла в топ-10 городов для путешествий на Масленицу</p>
+					<br>
+					<p class="media-item-description">Рейтинг составлен сервисом поиска отелей RoomGuru.ru на основе данных о бронировании отелей на период с 23 по 26 февраля.</p>
+					<br>
+					<a href="http://vologda-portal.ru/novosti/index.php?ID=359002&SECTION_ID=165">Подробнее
+						<img class="arrow" src="img/icons/right-arrow.svg" alt="">
+					</a>
+					<div class="clear"></div>
+				</div>
+				<div class="media-item">
+					<p class="media-item-header">10.02.2017 <br><br> 12-метровое чучело Масленицы сожгут в Вологде на проводах зимы</p>
+					<br>
+					<p class="media-item-description">Масленичные гулянья развернутся в областной столице с 20 по 26 февраля. Кульминацией станет традиционное сжигание куклы, олицетворяющей уходящую зиму, которое состоится 26 февраля.</p>
+					<br>
+					<a href="http://vologda-portal.ru/novosti/index.php?ID=358946&SECTION_ID=151">Подробнее
+						<img class="arrow" src="img/icons/right-arrow.svg" alt="">
+					</a>
+					<div class="clear"></div>
+				</div>
+				<div class="media-item">
+					<p class="media-item-header">07.02.2017 <br><br> Гости «Масляного пира» увидят и услышат «Частушечные бои» лучших фольклорных коллективов Вологодчины</p>
+					<br>
+					<p class="media-item-description">Фольклорные коллективы из разных уголков области сойдутся на Кремлевской площади 24 февраля. «Частушечные бои» – одно из событий, которое перенесли на Масленичную неделю с январских каникул.</p>
+					<br>
+					<a href="http://vologda-portal.ru/novosti/index.php?ID=358812&SECTION_ID=151">Подробнее
+						<img class="arrow" src="img/icons/right-arrow.svg" alt="">
+					</a>
+					<div class="clear"></div>
+				</div>
+				<div class="media-item">
+					<p class="media-item-header">04.02.2017 <br><br> Эксперты из Санкт-Петербурга привлечены к организации гастрономического фестиваля «Масляный пир»</p>
+					<br>
+					<p class="media-item-description">Для организации первого в Вологде гастрономического фестиваля «Масляный пир» в областную столицу были приглашены представители Центра кластерного развития и консалтинговой фирмы «Город мастеров» из Санкт-Петербурга.</p>
+					<br>
+					<a href="http://vologda-portal.ru/novosti/index.php?ID=359036&SECTION_ID=150">Подробнее
+						<img class="arrow" src="img/icons/right-arrow.svg" alt="">
+					</a>
+					<div class="clear"></div>
+				</div>
+				<div class="media-item">
+					<p class="media-item-header">03.02.2017 <br><br> Большой спортивный праздник пройдет на стадионе «Локомотив» в конце февраля</p>
+					<br>
+					<p class="media-item-description">Праздник, посвященный спорту и активному образу жизни, пройдет на стадионе «Локомотив» 25 февраля. В программе – массовое катание на ледовой дорожке, заезды на собачьих упряжках, мотокросс, спортивные забеги, перетягивание каната.</p>
+					<br>
+					<a href="http://vologda-portal.ru/novosti/index.php?ID=359030&SECTION_ID=162">Подробнее
+						<img class="arrow" src="img/icons/right-arrow.svg" alt="">
+					</a>
+					<div class="clear"></div>
+				</div>
+				<div class="media-item">
+					<p class="media-item-header">02.02.2017 <br><br> Ресторанный и туристический бизнес Вологды готовится к проведению первого гастрономического фестиваля «Масляный пир»</p>
+					<br>
+					<p class="media-item-description">Фестиваль пройдет в областной столице с 23 по 26 февраля. Для каждого из этих дней будет характерна своя гастрономическая тематика.</p>
+					<br>
+					<a href="http://vologda-portal.ru/novosti/index.php?ID=358601&SECTION_ID=150">Подробнее
+						<img class="arrow" src="img/icons/right-arrow.svg" alt="">
+					</a>
+					<div class="clear"></div>
+				</div>
+				<div class="media-item">
+					<p class="media-item-header">01.02.2017 <br><br> Участники Фестиваля вертепных театров приедут в Вологду на Масленицу</p>
+					<br>
+					<p class="media-item-description">Все театральные и фольклорные коллективы, подавшие заявку на участие в рождественском Фестивале вертепных театров, выступят в Вологде на Масленицу.</p>
+					<br>
+					<a href="http://vologda-portal.ru/novosti/index.php?ID=359019&SECTION_ID=164">Подробнее
+						<img class="arrow" src="img/icons/right-arrow.svg" alt="">
+					</a>
+					<div class="clear"></div>
+				</div>
+				<div class="media-item">
+					<p class="media-item-header">27.01.2017 <br><br> Масленичные гуляния стартуют в Вологде 23 февраля</p>
+					<br>
+					<p class="media-item-description">В течение всей масленичной недели вологжан и гостей города ждет насыщенная культурная и спортивная программа. 23 февраля состоится интерактивное представление «Воинская сила – сила богатырская».</p>
+					<br>
+					<a href="http://vologda-portal.ru/novosti/index.php?ID=358332&SECTION_ID=151">Подробнее
+						<img class="arrow" src="img/icons/right-arrow.svg" alt="">
+					</a>
+					<div class="clear"></div>
+				</div>
+				<div class="media-item">
+					<p class="media-item-header">26.01.2017 <br><br> Четыре гастрономических пира устроят в Вологде в масленичную неделю</p>
+					<br>
+					<p class="media-item-description">23 февраля вологжан и гостей города ждет мясной пир, 24 февраля – рыбный, 25 февраля – пироговый, 26 февраля – масляный. Все они пройдут в рамках одного гастрономического фестиваля «Масляный пир».</p>
+					<br>
+					<a href="http://vologda-portal.ru/novosti/index.php?ID=358303&SECTION_ID=151">Подробнее
+						<img class="arrow" src="img/icons/right-arrow.svg" alt="">
+					</a>
+					<div class="clear"></div>
+				</div>
+				<div class="media-item">
+					<p class="media-item-header">18.01.2017 <br><br> Подготовка к «Масляному пиру» началась в Вологде</p>
+					<br>
+					<p class="media-item-description">Первый гастрономический фестиваль «Масляный пир» пройдет в областной столице в Масленичную неделю с 20 по 26 февраля.</p>
+					<br>
+					<a href="http://vologda-portal.ru/novosti/index.php?ID=358048&SECTION_ID=151">Подробнее
+						<img class="arrow" src="img/icons/right-arrow.svg" alt="">
+					</a>
+					<div class="clear"></div>
+				</div>
+				<div class="media-item">
+					<p class="media-item-header">14.12.2016 <br><br> Вологда устроит пробный «Масляный пир» в 2017 году</p>
+					<br>
+					<p class="media-item-description">Пилотная версия нового проекта «Масляный пир» будет реализована в областной столице в феврале следующего года. Планируется, что гастрономическое действо привлечет дополнительный поток туристов и инвестиции.</p>
+					<br>
+					<a href="http://vologda-portal.ru/novosti/index.php?ID=356638&SECTION_ID=151">Подробнее
+						<img class="arrow" src="img/icons/right-arrow.svg" alt="">
+					</a>
+					<div class="clear"></div>
+				</div>
+		</div>
+	</section>
+
+	<section id="contacts" class="contacts">
+		<h2>Контакты</h2>
+		<br>
+		<br>
+		<div class="contacts-map">
+			<div class="accordion-header-info-circle left"></div>
+			<p class="ttu	font-darkgreen font-bold">Заказ билетов</p>
+			<br>
+			<p>
+				ТИЦ «Visit Vologda»<br><br>8 - 800 – 250- 35-63 <br>(звонок бесплатный) <br><br>Вологда, Советский пр., 6,
+			</p>
+			<div class="accordion-header-info-circle right"></div>
+		</div>			
+		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=FACu9ZO1MbXbSTz2G65czpusxJKTNubC&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=false"></script>
+	</section>
+
+	<footer class="footer">
+		<a class="footer-logo" href="#">
+			<img src="img/logo-footer.png" alt="">
+		</a>
+		<p class="copy">© Туристско-информационный<br>центр Вологодской области<br>Все права защищены</p>
+		<div class="footer-call">
+			<p>8-800-250-35-63
+				<br>
+				<span class="small">Звонок бесплатный! </span>
+			</p>
+			<button class="btn btn-footer">Заказать билет</button>
+		</div>
+		<a class="footer-logo" href="#">
+			<img src="img/aitek.jpg" alt="">
+		</a>
+	</footer>
+
+</body>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery-migrate-3.0.0.min.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/app.js"></script>
+<script>
+	$(document).ready(function(){
+      $('#btn_submit').click(function(){
+          var user_name    = $('#user_name').val();
+          var user_email   = $('#user_phone').val();
+          $.ajax({
+              url: "sendmail.php",
+              type: "post",
+              dataType: "json",
+              data: { 
+                  "user_name":    user_name,
+                  "user_phone":   user_email,
+              },
+              success: function(data){
+                  $('.messages').html(data.result);
+              }
+          });
+      });
+  });
+</script>
+<script type="text/javascript">
+ $(document).ready(function(){
+    $("#menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+});
+</script>
+<script> 
+$(document).ready(function() {
+	$(".gallerypdf").fancybox({
+		openEffect: 'elastic',
+		closeEffect: 'elastic',
+		autoSize: true,
+		type: 'iframe',
+		iframe: {
+			preload: false // fixes issue with iframe and IE
+		}
+	});
+});
+</script>
+</html>
